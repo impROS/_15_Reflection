@@ -1,7 +1,7 @@
 package org.example;
 
 public class SampleClass {
-    public String publicField;
+    public String publicField="publicField";
     private int privateField;
 
     private void privateMethod() {
