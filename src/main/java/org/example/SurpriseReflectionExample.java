@@ -30,6 +30,10 @@ public class SurpriseReflectionExample {
         System.out.println((sampleObject2.publicField));
 
 
+        Field constantField = SampleClass.class.getDeclaredField("CONSTANT");
+        constantField.set(sampleObject2, "CONSTANTAfterReflection");//Can not set static final java.lang.String field org.example.SampleClass.CONSTANT to java.lang.String
+        System.out.println((SampleClass.CONSTANT));
+
     }
 
     // Sınıfın alanlarını ve metotlarını yazdıran yardımcı bir metod
